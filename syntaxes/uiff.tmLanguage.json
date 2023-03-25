@@ -1,0 +1,55 @@
+{
+    "$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+    "name": "UIFF",
+    "patterns": [
+        {
+            "include": "#keywords"
+        },
+        {
+            "include": "#strings"
+        }
+    ],
+    "repository": {
+        "keywords": {
+            "patterns": [
+                {
+                    "name": "keyword.uiff.load",
+                    "match": "^(LF|CF-Pixels)\\b"
+                },
+                {
+                    "name": "variable.uiff.sym",
+                    "match": "\\$([a-zA-Z0-9_]+)"
+                },
+                {
+                    "name": "comment.uiff.singleline",
+                    "match": "#.*$"
+                },
+                {
+                    "name": "uiff.seperator",
+                    "match": "%"
+                },
+                {
+                    "name": "uiff.widget",
+                    "match": "(XText|XBox)(?=:)"
+                },
+                {
+                    "name": "number.uiff",
+                    "match": "\\b[0-9]+(\\.[0-9]+)?(e[0-9]+)?\\b"
+                },
+                {
+                    "name": "property.uiff",
+                    "match": "^(font|color|h-align)"
+                },
+                {
+                    "name": "align.uiff",
+                    "match": "(left|center|right)"
+                },
+                {
+                    "name": "filename.uiff",
+                    "match": "(?<=(LF \\$([a-zA-Z0-9_]+) ))[^#]+"
+                }
+            ]
+        }
+    },
+    "scopeName": "source.uiff"
+}

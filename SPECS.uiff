@@ -1,0 +1,20 @@
+#UIFF Syntax
+#Everything after # are comments
+
+#Font loading
+#LF [var-name] [file-name]
+LF $CNew rsrc/courier_new.ttf
+
+#Pixelsize configuration
+#CF-Pixels [var-name] [width] [height]
+#note: a height of 0 means same as width
+#note2: setting the pixelsize of fonts are required
+CF-Pixels $CNew 60 0
+#Seperator(required)
+%
+
+#CSS-like specs
+XText:
+font = $CNew#variable is required, do NOT directly supply filename
+color = 1/1/1/1#color: r/g/b/a
+h-align = center#left/center/right

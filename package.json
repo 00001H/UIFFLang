@@ -1,0 +1,25 @@
+{
+  "name": "uiff",
+  "displayName": "UIFF",
+  "description": "AUILibs Format File",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.76.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "uiff",
+      "aliases": ["UIFF", "uiff"],
+      "extensions": [".uiff"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "uiff",
+      "scopeName": "source.uiff",
+      "path": "./syntaxes/uiff.tmLanguage.json"
+    }]
+  }
+}
