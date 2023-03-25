@@ -22,5 +22,8 @@
       "path": "./syntaxes/uiff.tmLanguage.json"
     }]
   },
-  "icon": "https://raw.githubusercontent.com/00001H/UIFFLang/0e32644317bb514795bd50b43e5e4619b592dbcf/auils.ico"
+  "icon": "https://raw.githubusercontent.com/00001H/UIFFLang/0e32644317bb514795bd50b43e5e4619b592dbcf/auils.ico",
+  "repository": {
+    "url": "https://github.com/00001H/UIFFLang"
+  }
 }
